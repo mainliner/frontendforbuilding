@@ -285,11 +285,12 @@ body{
 }
 /*inner.html*/
 .inner{
-    ine-height: 21px;
-    color: white;
+    line-height: 25px;
     position: absolute;
-    height: 293px;
-    width: 310px;
-    top:50px;
-    left: 100px;   
+    height: 329px;
+    width: 642px;
+    top:20px;
+    left: -15px; 
+    text-align: left;
+    font-size: 12px; 
 }
