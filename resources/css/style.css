@@ -154,6 +154,7 @@ body{
 .intro-left{
     height: 350px;
     width: 300px;
+    top:50px;
     position: absolute;
 
 }
@@ -161,7 +162,8 @@ body{
     height: :350px;
     width: 500px;
     position: relative;
-    left: 100px;
+    left: 200px;
+    top:10px;
 }
 .photo-eight{
     height: 171px;
@@ -176,6 +178,11 @@ body{
 .intro-text{
     text-align: left;
     width: 296px;
+}
+.split{
+    position: absolute;
+    margin-top: -160px;
+    margin-left: 210px;
 }
 
 /*booking.html*/
@@ -217,4 +224,28 @@ body{
     text-align: middle;
     vertical-align: middle;
 }
-
+/*people.html*/
+.face{
+    height: 294px;
+    width: 196px;
+    padding-top:0px;
+}
+.describe{
+    line-height: 21px;
+    color: white;
+    position: absolute;
+    height: 293px;
+    width: 310px;
+    top:50px;
+    left: 100px;
+}
+/*inner.html*/
+.inner{
+    ine-height: 21px;
+    color: white;
+    position: absolute;
+    height: 293px;
+    width: 310px;
+    top:50px;
+    left: 100px;   
+}
