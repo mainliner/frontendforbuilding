@@ -1,0 +1,119 @@
+<html ng-app="Dream">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DreamsFound</title>
+        <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="resources/css/style.css"/>
+    </head>
+    <body ng-controller="stateController">
+        <div ng-view></div>
+
+        <div class="menu">
+            <center>
+                <img ng-click="action.nav('/')" class="logo" src="resources/imgs/logo.png">
+            </center>
+            <div class="row" style="margin-top:-65px;">
+                <div class="col-xs-2" style="margin-top:-130px">
+                    <center>
+                        <div class="menuitem">
+                        <ul ng-mouseleave="closeMenu('project')" ng-show="projectMenu">
+                            <li class="clickable" ng-click="action.nav('/project')"><div class="clicklayer"></div><div class="item ">项目内容</div></li>
+                            <li class="clickable" ng-click="action.nav('/intro')"><div class="clicklayer"></div><div class="item ">项目介绍</div></li>
+                            <li><div class="item">项目概况</div></li>
+                        </ul>
+                        <ul ng-show="!projectMenu" style="background-image:url()">
+                            <li></li>
+                            <li></li>
+                            <li ng-mouseover="showMenu('project')"><div class="item">项目概况</div></li>
+                        </ul>
+                        <img style="margin-right:17px" src="resources/imgs/menuitem">
+                        </div>
+                    </center>
+                </div>
+
+                <div class="col-xs-1" style="margin-top:-130px">
+                    <div class="menuitem" style="margin-right:-25px;text-align:right">
+                        <ul ng-mouseleave="closeMenu('building')" ng-show="buildingMenu">
+                            <li class="clickable" ng-click="action.nav('/building')"><div class="clicklayer"></div><div class="item" style="margin-top:10px">考克斯<p class="menufont">优秀作品</p></div></li>
+                            <li class="clickable" ng-click="action.nav('/artist')"><div class="clicklayer"></div><div class="item ">考克斯简介</div></li>
+                            <li><div class="item">建筑艺术</div></li>
+                        </ul>
+                        <ul ng-show="!buildingMenu" style="background-image:url()">
+                            <li></li>
+                            <li></li>
+                            <li ng-mouseover="showMenu('building')"><div class="item">建筑艺术</div></li>
+                        </ul>
+                        <img style="margin-left:0px "src="resources/imgs/menuitem">
+                    </div>
+                </div>
+
+                <div class="col-xs-3" style="margin-top:-130px">
+                    <center>
+                        <div class="menuitem" style="margin-left:-70px">
+                            <ul ng-mouseleave="closeMenu('business')" ng-show="businessMenu">
+                                <li class="clickable" ng-click="action.nav('/mange')"><div class="clicklayer"></div><div class="item" style="margin-top:10px">内部物业<p>与管理</p></div></li>
+                                <li class="clickable" ng-click="action.nav('/env')"><div class="clicklayer"></div><div class="item ">周边配套</div></li>
+                                <li><div class="item">商务配套</div></li>
+                            </ul>
+                            <ul ng-show="!businessMenu" style="background-image:url()">
+                                <li></li>
+                                <li></li>
+                                <li ng-mouseover="showMenu('business')"><div class="item">商务配套</div></li>
+                            </ul>
+                            <img style="margin-left:0px" src="resources/imgs/menuitem">
+                        </div>
+                    </center>
+                </div>
+
+                <div class="col-xs-3" style="margin-top:-75px">
+                    <div style="margin-left:95px" class="menuitem">
+                        <ul ng-mouseleave="closeMenu('activity')" ng-show="activityMenu" style="height:110px">
+                                <li class="clickable" ng-click="action.nav('/activity')"><div class="clicklayer"></div><div class="item ">近期活动</div></li>
+                                <li><div class="item">近期动向</div></li>
+                        </ul>
+                        <ul ng-show="!activityMenu" style="background-image:url();height:110px;" >
+                                <li></li>
+                                <li ng-mouseover="showMenu('activity')"><div class="item">近期动向</div></li>
+                        </ul>
+                        <img style="margin-left:-0px" src="resources/imgs/menuitem">
+                    </div>
+                </div>
+                <div class="col-xs-1 " style="margin-top:-20px">
+                    <div class="menuitem" style="margin-left:-65px;">
+                        <ul ng-mouseleave="closeMenu('book')" ng-show="bookMenu" style="height:55px">
+                                <li class="clickable" ng-click="action.nav('/booking')"><div class="item">租赁服务</div></li>
+                        </ul>
+                        <ul ng-show="!bookMenu" style="background-image:url();height:55px;" >
+                                <li ng-mouseover="showMenu('book')"><div class="item">租赁服务</div></li>
+                        </ul>
+                        <img style="margin-left:-0px" src="resources/imgs/menuitem">
+                    </div>
+                </div>
+
+                <div class="col-xs-2" style="margin-top:-20px">
+                    <center>
+                        <div class="menuitem" style="margin-left:-80px">
+                            <ul ng-mouseleave="closeMenu('company')" ng-show="companyMenu" style="height:55px">
+                                <li class="clickable" ng-click="action.nav('/company')"><div class="item">合作单位</div></li>
+                        </ul>
+                        <ul ng-show="!companyMenu" style="background-image:url();height:55px;" >
+                                <li ng-mouseover="showMenu('company')"><div class="item">合作单位</div></li>
+                        </ul>
+                            <img style="margin-left:0px" src="resources/imgs/menuitem">
+                        </div>
+                    </center>
+                </div>
+            </div>
+
+
+            <div class="bottom-text">
+                租赁热线：<span class="phone-number">6603 9797/6603 8787</span> 项目地址：北京市西城区锦什坊街35号 版权所有
+            </div>
+        </div>
+        <script src="resources/js/angular.js"></script>
+        <script src="resources/js/angular-route.js"></script>
+        <script src="resources/js/app.js"></script>
+        <script src="resources/js/controllers/state.js"></script>
+    </body>
+</html>
