@@ -1,4 +1,39 @@
 <div class="blur-layer" ></div>
 <div class="project">
-    <h1>company</h1>
 </div>    
+<center>
+    <div class="company_context">
+
+        <div class="company_col_1">
+            <img src="resources/imgs/company.png">
+            <div class="company_titles">
+                <h5 class="clickable" style="font-weight:bold;color:{{clicked}}" ng-click="clickCompany(1)"><img src="resources/imgs/text-icon.png">&nbsp;<span class="clicktext">金融街房地产顾问有限公司</span></h5>
+                <br/>
+                <h5 class="clickable" style="font-weight:bold" ng-click="clickCompany(2)"><img src="resources/imgs/text-icon.png">&nbsp;<span class="clicktext">哈特曼·考克斯建筑设计师事务所</span></h5>
+                <br/>
+                <h5 class="clickable" style="font-weight:bold" ng-click="clickCompany(3)"><img src="resources/imgs/text-icon.png">&nbsp;<span class="clicktext">北京建筑设计研究院</span></h5>
+                <br/>
+                <h5 class="clickable" style="font-weight:bold" ng-click="clickCompany(4)"><img src="resources/imgs/text-icon.png">&nbsp;<span class="clicktext">仲量联行</span></h5>
+                <br/>
+            </div>      
+        </div>
+          
+        <div class="company_col_2">
+            <img src="resources/imgs/split.png">
+        </div>
+
+        <div class="company_col_3">
+            <div class="company_text">
+                <p >
+                    {{companyContent}}
+                </p>
+                <div class="site">
+                <span style="font-size:15px;">官网地址：</span><span class="title-color">{{url1}}</span><br\>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="title-color">{{url2}}</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</center>

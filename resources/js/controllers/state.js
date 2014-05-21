@@ -40,4 +40,6 @@ app.controller('stateController',function($scope,$location) {
         if(flag === 'company')
             $scope.companyMenu = false;
     };
+    //$scope.showDetail = false;
+
 });

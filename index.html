@@ -69,7 +69,7 @@
                 <div class="col-xs-3" style="margin-top:-75px">
                     <div style="margin-left:95px" class="menuitem">
                         <ul ng-mouseleave="closeMenu('activity')" ng-show="activityMenu" style="height:110px">
-                                <li class="clickable" ng-click="action.nav('/activity')"><div class="clicklayer"></div><div class="item ">近期活动</div></li>
+                                <li class="clickable" ng-click="action.nav('/activity');"><div class="clicklayer"></div><div class="item ">近期活动</div></li>
                                 <li><div class="item">近期动向</div></li>
                         </ul>
                         <ul ng-show="!activityMenu" style="background-image:url();height:110px;" >
@@ -116,6 +116,11 @@
         <script src="resources/js/app.js"></script>
         <script src="resources/js/controllers/state.js"></script>
         <script src="resources/js/controllers/project_controller.js"></script>
+        <script src="resources/js/controllers/activity.js"></script>
+        <script src="resources/js/controllers/building.js"></script>
+        <script src="resources/js/controllers/company.js"></script>
+
+
 
     </body>
 </html>

@@ -89,7 +89,7 @@ body{
   height:100%;
   background-color:white;
   z-index:-1;
-  opacity:0.3;
+  opacity:0.55;
   top:0;
 }
 
@@ -105,6 +105,16 @@ body{
     z-index:-2;
 }
 
+.welcome_text{
+    width: 390px;
+    height: 152px;
+    margin-left: 700px;
+    margin-top: 100px;
+}
+
+.clicktext:hover{
+    color:#886540;
+}
 
 /*project_con.html*/
 .context{
@@ -147,23 +157,33 @@ body{
 
 /*project-intro*/
 .intro{
-    height:350px;
-    width:1000px;
-    margin-top: 30px;
+    width:800px;
+    height:240px;
+    margin-top:30px; 
 }
 .intro-left{
-    height: 350px;
-    width: 300px;
-    top:50px;
+    height:307px;
+    width:233px;
     position: absolute;
+    margin-top: -5px;
+    z-index: ;
 
 }
+.split{
+    height:329px;
+    width:10px;
+    position: fixed;
+    z-index: 1;
+    margin-left: 320px;
+}
+
 .intro-right{
-    height: :350px;
-    width: 500px;
-    position: relative;
-    left: 200px;
-    top:10px;
+    height: 329px;
+    width:567px;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 5px;
+    top: 30px;
 }
 .photo-eight{
     height: 171px;
@@ -175,15 +195,18 @@ body{
     height:171px;
     width:260px;
 }
+.thumb-pic:hover{
+  box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5), 0px 1px 5px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5), 0px 1px 5x rgba(0,0,0,0.4);
+    -webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5), 0px 1px 5px rgba(0,0,0,0.4);
+}
 .intro-text{
     text-align: left;
     width: 296px;
+    line-height: 25px;
+    font-size: 12px; 
 }
-.split{
-    position: absolute;
-    margin-top: -160px;
-    margin-left: 210px;
-}
+
 
 /*booking.html*/
 .bookingpic_context{
@@ -281,7 +304,7 @@ body{
     height: 293px;
     width: 310px;
     top:50px;
-    left: 100px;
+    left: 125px;
 }
 /*inner.html*/
 .inner{
@@ -293,4 +316,82 @@ body{
     left: -15px; 
     text-align: left;
     font-size: 12px; 
+}
+/*activity.html*/
+.two-line-title{
+
+}
+.detailContent{
+    width: 380px;
+    margin-top: 30px;
+
+}
+/*building.html*/
+.number{
+    height: 288px;
+    width: 22px;
+    padding-top:35px;
+    padding-right: 200px;
+}
+.select-list{
+    margin-top: -280px;
+    height: 288px;
+    width:230px;
+}
+.select-list li{
+    list-style-type:none;
+    height:28px;
+}
+
+/*company.html*/
+.company_context{
+    width:800px;
+    height:240px;
+    margin-top:30px; 
+}
+.company_col_1{
+    height:307px;
+    width:233px;
+    position: absolute;
+    margin-top: -5px;
+    z-index: ;
+}
+.company_col_2{
+    height:329px;
+    width:10px;
+    position: fixed;
+    z-index: 1;
+    margin-left: 290px;
+}
+.company_col_3{
+    height: 329px;
+    width:567px;
+    background-image: url(../imgs/outer_textbg.png);
+    position: absolute;
+    margin-left: 292px;
+    margin-top: 5px;
+    top: 30px;
+}
+.company_text{
+    width:380px;
+    height:240px;
+    margin-left: -60px;
+    margin-top: 0px;
+}
+.company_text p{
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+.company_titles{
+    line-height: 5px;
+    position: relative;
+    padding-top: 15px; 
+    text-align: left;
+    font-size: 14px; 
+}
+.site{
+    text-align: left;
 }

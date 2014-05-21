@@ -2,49 +2,41 @@
 <div class="project">
 </div>
 
-<!-- <center>
-  <div class="intro">
-    <div class="intro-left">
-        <div class="face" >
-            <img src="resources/imgs/activity.png">
-        </div>
-        <img class="split" src="resources/imgs/split.png" style="top:150px;">
-    </div>
-    <div class="intro-right" style="top:20px">
-        <img src="resources/imgs/text-background.png">
-        <div class="describe">
-            <h4><img src="resources/imgs/text-icon.png">&nbsp;哈特曼·考克斯建筑设计师事务所</h4>
-            <br/>
-            <h4><img src="resources/imgs/text-icon.png">&nbsp;哈特曼·考克斯建筑设计师事务所</h4>
-            <br/>
-            <h4><img src="resources/imgs/text-icon.png">&nbsp;哈特曼·考克斯建筑设计师事务所</h4>
-            <br/>
-            <h4><img src="resources/imgs/text-icon.png">&nbsp;哈特曼·考克斯建筑设计师事务所</h4>
-            <br/>
-        </div>
-    </div>
-  </div>
-</center> -->
 
 <center>
   <div class="intro">
-    <div class="intro-left">
+    <div class="intro-left" style="width:100px">
         <div class="face" >
             <img src="resources/imgs/activity.png">
         </div>
-        <img class="split" src="resources/imgs/split.png" style="top:170px;">
     </div>
-    <div class="intro-right" style="top:30px">
+    <div class="split" style="margin-left:260px">
+        <img src="resources/imgs/split.png" >
+    </div>
+    <div class="intro-right" style="top:30px;">
         <img src="resources/imgs/text-background.png">
-        <div class="inner">
-        	<h5><img src="resources/imgs/text-icon.png">&nbsp;哈特曼·考克斯建筑设计师事务所</h5>
-            <br/>
-            <h5><img src="resources/imgs/text-icon.png">&nbsp;哈特曼·考克斯建筑设计师事务所</h5>
-            <br/>
-            <h5><img src="resources/imgs/text-icon.png">&nbsp;哈特曼·考克斯建筑设计师事务所</h5>
-            <br/>
-            <h5><img src="resources/imgs/text-icon.png">&nbsp;哈特曼·考克斯建筑设计师事务所</h5>
-            <br/>
+        <div class="inner" ng-show = "!showDetail">
+        	<h5><img src="resources/imgs/text-icon.png">&nbsp;<span class="clickable title-color" ng-click="clickActivity(1)">哈特曼·考克斯建筑设计师事务所</span></h5>
+            <h5><img src="resources/imgs/text-icon.png">&nbsp;<span class="clickable title-color" ng-click="clickActivity(2)">活动内容</span></h5>
+            <h5><img src="resources/imgs/text-icon.png">&nbsp;<span class="clickable title-color" ng-click="clickActivity(3)">活动内容</span></h5>
+            <h5><img src="resources/imgs/text-icon.png">&nbsp;<span class="clickable title-color" ng-click="clickActivity(4)">活动内容</span></h5>
+        </div>
+        <div class="inner" ng-show="showDetail">
+            <center>
+                <div class="detailTitle">
+                    <img src="resources/imgs/32.png">
+                        <span class="two-line-title">
+                            <span class="title-color" style="font-size:15px;">{{detailTitle}}</span>
+                        </span>
+                    <img src="resources/imgs/33.png">
+                </div>
+                <div class="detailContent">
+                    <p>{{detailContent}}</p>
+                    <div class="back" style="">
+                        <p ng-click="back()"><span class="clickable title-color">返回</span></p>
+                    </div>
+                </div>
+            </center>
         </div>
     </div>
   </div>
