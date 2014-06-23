@@ -5,18 +5,18 @@
         <title>DreamsFound</title>
         <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="resources/css/style.css"/>
+        <link rel="stylesheet" href="resources/css/animate.css"/>
     </head>
     <body ng-controller="stateController">
-        <div ng-view></div>
-
+        <center>
+      <div class="fullscreen">
+        <div ng-view></div> 
+        <script src="http://cdn.staticfile.org/angular.js/1.3.0-beta.8/angular.min.js"></script>
         <div class="menu">
-            <center>
-                <img ng-click="action.nav('/')" class="logo" src="resources/imgs/logo.png">
-            </center>
+           
             <div class="row" style="margin-top:-65px;">
-                <div class="col-xs-2" style="margin-top:-130px">
-                    <center>
-                        <div class="menuitem">
+                <div class="col-xs-2" style="margin-top:-20px;">
+                        <div class="menuitem" style="margin-left:-30px;">
                         <ul ng-mouseleave="closeMenu('project')" ng-show="projectMenu">
                             <li class="clickable" ng-click="action.nav('/project')"><div class="clicklayer"></div><div class="item ">项目内容</div></li>
                             <li class="clickable" ng-click="action.nav('/intro')"><div class="clicklayer"></div><div class="item ">项目介绍</div></li>
@@ -28,12 +28,11 @@
                             <li ng-mouseover="showMenu('project')"><div class="item">项目概况</div></li>
                         </ul>
                         <img style="margin-right:17px" src="resources/imgs/menuitem.png">
-                        </div>
-                    </center>
+                        </div>  
                 </div>
 
-                <div class="col-xs-1" style="margin-top:-130px">
-                    <div class="menuitem" style="margin-right:-25px;text-align:right">
+                <div class="col-xs-2" style="margin-top:-20px;">
+                    <div class="menuitem" style="margin-left:-130px;">
                         <ul ng-mouseleave="closeMenu('building')" ng-show="buildingMenu">
                             <li class="clickable" ng-click="action.nav('/building')"><div class="clicklayer"></div><div class="item" style="margin-top:10px">考克斯<p class="menufont">优秀作品</p></div></li>
                             <li class="clickable" ng-click="action.nav('/artist')"><div class="clicklayer"></div><div class="item ">考克斯简介</div></li>
@@ -48,9 +47,9 @@
                     </div>
                 </div>
 
-                <div class="col-xs-3" style="margin-top:-130px">
-                    <center>
-                        <div class="menuitem" style="margin-left:-70px">
+                <div class="col-xs-2" style="margin-top:-20px;">
+                    
+                        <div class="menuitem" style="margin-left:-235px;">
                             <ul ng-mouseleave="closeMenu('business')" ng-show="businessMenu">
                                 <li class="clickable" ng-click="action.nav('/mange')"><div class="clicklayer"></div><div class="item" style="margin-top:10px">内部物业<p>与管理</p></div></li>
                                 <li class="clickable" ng-click="action.nav('/env')"><div class="clicklayer"></div><div class="item ">周边配套</div></li>
@@ -63,11 +62,12 @@
                             </ul>
                             <img style="margin-left:0px" src="resources/imgs/menuitem.png">
                         </div>
-                    </center>
+                    
                 </div>
 
-                <div class="col-xs-3" style="margin-top:-75px">
-                    <div style="margin-left:95px" class="menuitem">
+                <div class="col-xs-2" style="margin-top:35px;width:206px;">
+                    <center>
+                    <div  class="menuitem" style="margin-left:80px;">
                         <ul ng-mouseleave="closeMenu('activity')" ng-show="activityMenu" style="height:110px">
                                 <li class="clickable" ng-click="action.nav('/activity');"><div class="clicklayer"></div><div class="item ">近期活动</div></li>
                                 <li><div class="item">近期动向</div></li>
@@ -78,9 +78,10 @@
                         </ul>
                         <img style="margin-left:-0px" src="resources/imgs/menuitem.png">
                     </div>
+                    </center>
                 </div>
-                <div class="col-xs-1 " style="margin-top:-20px">
-                    <div class="menuitem" style="margin-left:-65px;">
+                <div class="col-xs-2" style="margin-top:90px;width:106px">
+                    <div class="menuitem" style="margin-left:5px;">
                         <ul ng-mouseleave="closeMenu('book')" ng-show="bookMenu" style="height:55px">
                                 <li class="clickable" ng-click="action.nav('/booking')"><div class="item">租赁服务</div></li>
                         </ul>
@@ -91,10 +92,10 @@
                     </div>
                 </div>
 
-                <div class="col-xs-2" style="margin-top:-20px">
+                <div class="col-xs-2" style="margin-top:90px;">
                     <center>
-                        <div class="menuitem" style="margin-left:-80px">
-                            <ul ng-mouseleave="closeMenu('company')" ng-show="companyMenu" style="height:55px">
+                        <div class="menuitem" style="margin-left:0px">
+                        <ul ng-mouseleave="closeMenu('company')" ng-show="companyMenu" style="height:55px">
                                 <li class="clickable" ng-click="action.nav('/company')"><div class="item">合作单位</div></li>
                         </ul>
                         <ul ng-show="!companyMenu" style="background-image:url();height:55px;" >
@@ -105,22 +106,25 @@
                     </center>
                 </div>
             </div>
+            <center style="z-index:10;">
+                <img ng-click="action.nav('/')" class="logo" src="resources/imgs/logo.png">
+            </center>
+            
 
-
-            <div class="bottom-text">
-                租赁热线：<span class="phone-number">6603 9797/6603 8787</span> 项目地址：北京市西城区锦什坊街35号 版权所有
-            </div>
+            <center>
+                <span class="bottom-text">租赁热线：<span class="phone-number">6603 9797/6603 8787</span> 项目地址：北京市西城区锦什坊街35号 版权所有</span>
+            </center>
         </div>
-        <script src="resources/js/angular.js"></script>
-        <script src="resources/js/angular-route.js"></script>
+      </div>
+    </center>
+        <script src="http://cdn.staticfile.org/angular.js/1.3.0-beta.8/angular-route.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="resources/js/app.js"></script>
         <script src="resources/js/controllers/state.js"></script>
         <script src="resources/js/controllers/project_controller.js"></script>
         <script src="resources/js/controllers/activity.js"></script>
         <script src="resources/js/controllers/building.js"></script>
         <script src="resources/js/controllers/company.js"></script>
-
-
-
     </body>
 </html>
