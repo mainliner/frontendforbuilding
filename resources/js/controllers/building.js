@@ -4,43 +4,43 @@ app.controller('buildingController',function($scope,$location) {
         switch(n)
         {
             case 1:
-                $scope.buildingImgName = "building1.png";
+                $scope.buildingImgName = "nb1.png";
                 $('#imageShow').onload(doSomeAnimation());
                 break;
             case 2:
-                $scope.buildingImgName = "1-1.png";
+                $scope.buildingImgName = "nb2.png";
                 $('#imageShow').onload(doSomeAnimation());
                 break;
             case 3:
-                $scope.buildingImgName = "2-1.png";
+                $scope.buildingImgName = "nb3.png";
                 $('#imageShow').onload(doSomeAnimation());
                 break;
             case 4:
-                $scope.buildingImgName = "3-1.png";
+                $scope.buildingImgName = "nb4.png";
                 $('#imageShow').onload(doSomeAnimation());
                 break;
             case 5:
-                $scope.buildingImgName = "1-1.png";
+                $scope.buildingImgName = "nb5.png";
                 $('#imageShow').onload(doSomeAnimation());
                 break;
             case 6:
-                $scope.buildingImgName = "2-1.png";
+                $scope.buildingImgName = "nb6.png";
                 $('#imageShow').onload(doSomeAnimation());
                 break;
             case 7:
-                $scope.buildingImgName = "3-1.png";
+                $scope.buildingImgName = "nb7.png";
                 $('#imageShow').onload(doSomeAnimation());
                 break;
             case 8:
-                $scope.buildingImgName = "4-1.png";
+                $scope.buildingImgName = "nb8.png";
                 $('#imageShow').onload(doSomeAnimation());
                 break;
             case 9:
-                $scope.buildingImgName = "building1.png";
+                $scope.buildingImgName = "nb9.png";
                 $('#imageShow').onload(doSomeAnimation());
                 break;
             case 10:
-                $scope.buildingImgName = "1-1.png";
+                $scope.buildingImgName = "nb10.png";
                 $('#imageShow').onload(doSomeAnimation());
                 break;
         }

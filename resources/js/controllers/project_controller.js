@@ -5,7 +5,7 @@ app.controller('projectController',function($scope,$location) {
     $scope.slides = [ 
             {image:'resources/imgs/1-1.png',description:'Image 00'}, 
             {image:'resources/imgs/2-1.png',description:'Image 01'}, 
-            {image:'resources/imgs/3-1.png',description:'Image 02'}, 
+            {image:'resources/imgs/3-3.png',description:'Image 02'}, 
             {image:'resources/imgs/4-1.png',description:'Image 03'}, 
             {image:'resources/imgs/5-1.png',description:'Image 04'},
             {image:'resources/imgs/6-1.png',description:'Image 04'},
@@ -39,7 +39,7 @@ app.controller('projectController',function($scope,$location) {
             case 3:
                 $scope.textTitle = "城市核心   执掌金融价值与资源";
                 $scope.textBody = "在以中心为基准、效率至上的商务时代，锦什坊街35号，据守金融街核心，毗邻全国政协礼堂，把守中心交通脉络，在中国金融核心纵横无界，成就独一无二、风云际会的未来商务巨擎。在效率至上的现代商务时代，交通路网发达，才能使商务无往不利。锦什坊街35号，把守中心交通脉络。坐拥25条公交线，地铁2号线，至北京首都国际机场45分钟，从横无界，抢占世界商务先机。";
-                $scope.imageName = "3-1.png";
+                $scope.imageName = "3-3.png";
                 $('#imageShow').onload(doSomeAnimation());
                 break;
             case 4:
