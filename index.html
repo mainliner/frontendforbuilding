@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>DreamsFound</title>
+        <title></title>
         <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="resources/css/style.css"/>
         <link rel="stylesheet" href="resources/css/animate.css"/>
@@ -35,7 +35,7 @@
                     <div class="menuitem" style="margin-left:-130px;">
                         <ul ng-mouseleave="closeMenu('building')" ng-show="buildingMenu">
                             <li class="clickable" ng-click="action.nav('/building')"><div class="clicklayer"></div><div class="item" style="margin-top:10px">考克斯<p class="menufont">优秀作品</p></div></li>
-                            <li class="clickable" ng-click="action.nav('/artist')"><div class="clicklayer"></div><div class="item ">考克斯简介</div></li>
+                            <li class="clickable" ng-click="action.nav('/artist')"><div class="clicklayer"></div><div class="item ">设计师简介</div></li>
                             <li><div class="item">建筑艺术</div></li>
                         </ul>
                         <ul ng-show="!buildingMenu" style="background-image:url()">
@@ -91,29 +91,46 @@
                         <img style="margin-left:-0px" src="resources/imgs/menuitem.png">
                     </div>
                 </div>
-
                 <div class="col-xs-2" style="margin-top:90px;">
                     <center>
                         <div class="menuitem" style="margin-left:0px">
                         <ul ng-mouseleave="closeMenu('company')" ng-show="companyMenu" style="height:55px">
-                                <li class="clickable" ng-click="action.nav('/company')"><div class="item">合作单位</div></li>
+                                <li class="clickable" ng-click="action.nav('/company')"><div class="item">关于我们</div></li>
                         </ul>
                         <ul ng-show="!companyMenu" style="background-image:url();height:55px;" >
-                                <li ng-mouseover="showMenu('company')"><div class="item">合作单位</div></li>
+                                <li ng-mouseover="showMenu('company')"><div class="item">关于我们</div></li>
                         </ul>
                             <img style="margin-left:0px" src="resources/imgs/menuitem.png">
                         </div>
                     </center>
                 </div>
             </div>
+
             <center style="z-index:10;">
                 <img ng-click="action.nav('/')" class="logo" src="resources/imgs/logo.png">
             </center>
             
-
             <center>
-                <span class="bottom-text">租赁热线：<span class="phone-number">6603 9797/6603 8787</span> 项目地址：北京市西城区锦什坊街35号 版权所有</span>
+                <div>
+                    <span class="bottom-text">租赁热线：<span class="phone-number">010-66039797/010-66038787</span> 项目地址：北京市西城区锦什坊街35号 版权所有</span>
+<!--                         <span class="bottom-text">\n北京国有资本经营管理中心(北京市西城区北京金融街A区英蓝国际金融中心)</span>
+ -->
+<!--                     <p>
+                        租赁热线：6603 9797/6603 8787 版权所有                    
+                        <br/>    
+                        北京国有资本经营管理中心(北京市西城区北京金融街A区英蓝国际金融中心)
+                    </p>
+ -->
+
+                </div>
+                <div>
+                    <span class="bottom2-text">北京国有资本经营管理中心
+（北京市西城区金融大街7号英蓝国际金融中心8层805） 邮编：100033
+                    </span>
+                </div>
+
             </center>
+
         </div>
       </div>
     </center>
